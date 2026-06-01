@@ -5,7 +5,7 @@ description = "Drop a screenshot of a bug; get a structured GitHub issue with re
 readme = "README.md"
 license = { text = "MIT" }
 requires-python = ">=3.11"
-authors = [{ name = "The Authors" }]
+authors = [{ name = "Aman Zainal" }]
 keywords = ["github", "issues", "screenshot", "vision", "llm", "cli", "bug-report"]
 dependencies = [
     "pillow>=10.0.0",
