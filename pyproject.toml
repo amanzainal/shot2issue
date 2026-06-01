@@ -1,0 +1,28 @@
+[project]
+name = "shot2issue"
+version = "0.1.0"
+description = "Drop a screenshot of a bug; get a structured GitHub issue with repro steps and labels."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.11"
+authors = [{ name = "The Authors" }]
+keywords = ["github", "issues", "screenshot", "vision", "llm", "cli", "bug-report"]
+dependencies = [
+    "pillow>=10.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+]
+
+[project.scripts]
+shot2issue = "shot2issue.cli:main"
+
+[build-system]
+requires = ["uv_build>=0.11.8,<0.12.0"]
+build-backend = "uv_build"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

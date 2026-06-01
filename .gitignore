@@ -1,0 +1,21 @@
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Python-generated files
+__pycache__/
+*.py[oc]
+*.egg-info
+.pytest_cache/
+
+# Build artifacts
+build/
+dist/
+wheels/
+
+# Virtual environments
+.venv
+
+# Editor / scratch
+*.bak
