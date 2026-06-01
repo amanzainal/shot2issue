@@ -1,0 +1,12 @@
+{
+  "title": "App crashes with NullReferenceException on Save",
+  "description": "The screenshot shows an unhandled error dialog appearing when the user clicks the Save button on the settings page. A red banner reads 'Something went wrong' above a stack trace.",
+  "repro_steps": [
+    "Open the application and navigate to Settings",
+    "Change any field in the General tab",
+    "Click the Save button"
+  ],
+  "expected": "The settings are saved and a success toast is shown.",
+  "actual": "An error dialog appears with a NullReferenceException and the settings are not saved.",
+  "labels": ["bug", "crash", "settings"]
+}
